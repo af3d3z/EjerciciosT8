@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PruebaMAUI.MainPage">
+
+    <ScrollView>
+        <HorizontalStackLayout>
+            <Label Text="Primary colors" TextColor="Purple"></Label>
+            <VerticalStackLayout Margin="10">
+                <BoxView WidthRequest="40" HeightRequest="40" Color="Red"></BoxView>
+                <BoxView WidthRequest="40" HeightRequest="40" Color="Yellow"></BoxView>
+                <BoxView WidthRequest="40" HeightRequest="40" Color="Blue"></BoxView>
+            </VerticalStackLayout>
+            <Label Text="Secondary colors" TextColor="Purple"></Label>
+            <VerticalStackLayout Margin="10">
+                <BoxView WidthRequest="40" HeightRequest="40" Color="Green"></BoxView>
+                <BoxView WidthRequest="40" HeightRequest="40" Color="Orange"></BoxView>
+                <BoxView WidthRequest="40" HeightRequest="40" Color="Purple"></BoxView>
+            </VerticalStackLayout>
+        </HorizontalStackLayout>
+    </ScrollView>
+
+</ContentPage>
