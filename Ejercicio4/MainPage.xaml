@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio4.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="15">
+            <Border Padding="10" Stroke="Black">
+                <Label Text="Main Page" HorizontalTextAlignment="Center"></Label>
+            </Border>
+            <Border Padding="10" Stroke="Black">
+                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor tincidunt dui eget fringilla. Praesent accumsan nibh porta, dapibus erat quis, consectetur arcu. "></Label>
+            </Border>
+            <Border Padding="10" Stroke="Black">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <FlexLayout Grid.Column="0" Grid.Row="0" Grid.RowSpan="4" Wrap="Wrap">
+                        <BoxView CornerRadius="8" Margin="10" BackgroundColor="Orange" HeightRequest="100" WidthRequest="100"></BoxView>
+                        <BoxView CornerRadius="8" Margin="10" BackgroundColor="Cyan" HeightRequest="100" WidthRequest="100"></BoxView>
+                        <BoxView CornerRadius="8" Margin="10" BackgroundColor="LightGreen" HeightRequest="100" WidthRequest="100"></BoxView>
+                    </FlexLayout>
+                    <Border Padding="10" Grid.Column="1" Grid.Row="0" Margin="10" Stroke="Black">
+                        <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor tincidunt dui eget fringilla. "></Label>
+                    </Border>
+                    <Border Padding="10" Grid.Column="1" Grid.Row="1" Margin="10" Stroke="Black">
+                        <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor tincidunt dui eget fringilla. "></Label>
+                    </Border>
+                    <Border Padding="10" Grid.Column="1" Grid.Row="2" Margin="10" Stroke="Black">
+                        <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor tincidunt dui eget fringilla. "></Label>
+                    </Border>
+                    <Border Padding="10" Grid.Column="1" Grid.Row="3 " Margin="10" Stroke="Black">
+                        <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor tincidunt dui eget fringilla. "></Label>
+                    </Border>
+                </Grid>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

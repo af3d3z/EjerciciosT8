@@ -4,12 +4,12 @@
              x:Class="Ejercicio3.MainPage">
 
     <ScrollView>
-        <Border WidthRequest="300" HeightRequest="300" Stroke="Black">
+        <Border Margin="30" Stroke="Black">
             <AbsoluteLayout>
                 <BoxView Color="Red" AbsoluteLayout.LayoutBounds="0, 0, 75, 75"></BoxView>
-                <BoxView Color="Blue" AbsoluteLayout.LayoutBounds="75, 0, 150, 75"></BoxView>
-                <BoxView Color="Green" AbsoluteLayout.LayoutBounds="0, 75, 225, 75"></BoxView>
-                <BoxView Color="Yellow" AbsoluteLayout.LayoutBounds="75, 150, 450, 150"></BoxView>
+                <BoxView Color="Blue" AbsoluteLayout.LayoutBounds="75, 0, 150, 75" ></BoxView>
+                <BoxView Color="Green" AbsoluteLayout.LayoutBounds="0, 75, 225, 75" ></BoxView>
+                <BoxView Color="Yellow" AbsoluteLayout.LayoutBounds="75, 150, 1, 1" AbsoluteLayout.LayoutFlags="SizeProportional"></BoxView>
             </AbsoluteLayout>
         </Border>
     </ScrollView>
