@@ -6,14 +6,32 @@
     <Grid>
         <ScrollView>
             <VerticalStackLayout Padding="20" Spacing="20">
+                <HorizontalStackLayout HorizontalOptions="Start">
+                    <Button
+                    ImageSource="trash_can.png"
+                    BackgroundColor="LightGreen"
+                    HeightRequest="10"
+                    WidthRequest="10"
+                    Margin="5"
+                    />
+                    <Button
+                    ImageSource="pencil.png"
+                    BackgroundColor="LightGreen"
+                    HeightRequest="10"
+                    WidthRequest="10"
+                    Margin="5"
+                    />
+                </HorizontalStackLayout>
                 <ListView HorizontalOptions="Center" x:Name="PersonasListView" ItemsSource="{Binding Personas}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
-                                <StackLayout Margin="10">
-                                    <Label FontSize="20" Text="{Binding NombreCompleto}"></Label>
-                                    <Label FontSize="20" Text="{Binding FechaNac, StringFormat='{}{0:dd/MM/yyyy}'}"></Label>
-                                </StackLayout>
+                                <HorizontalStackLayout>
+                                    <StackLayout Margin="10">
+                                        <Label FontSize="20" Text="{Binding NombreCompleto}"></Label>
+                                        <Label FontSize="20" Text="{Binding FechaNac, StringFormat='{}{0:dd/MM/yyyy}'}"></Label>
+                                    </StackLayout>
+                                </HorizontalStackLayout>
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
@@ -22,30 +40,16 @@
             </VerticalStackLayout>
         </ScrollView>
         <Button Text="+"
-                BackgroundColor="Red"
+                FontSize="20"
+                FontAttributes="Bold"
+                BackgroundColor="LightGreen"
                 TextColor="Black"
                 HorizontalOptions="End"
                 VerticalOptions="End"
                 HeightRequest="20"
                 WidthRequest="20"
-                Margin="20, 140"
+                Margin="20"
          />
-        <Button
-                ImageSource="trash_can.png"
-                BackgroundColor="Red"
-                HorizontalOptions="End"
-                VerticalOptions="End"
-                HeightRequest="20"
-                WidthRequest="20"
-                Margin="20, 80" />
-        <Button
-                ImageSource="pencil.png"
-                BackgroundColor="Red"
-                HorizontalOptions="End"
-                VerticalOptions="End"
-                HeightRequest="20"
-                WidthRequest="20"
-                Margin="20" />
     </Grid>
 
 
