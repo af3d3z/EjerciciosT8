@@ -70,7 +70,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\..\Ejercicio2\Ejercicio2\BibliotecaDeClases\BibliotecaDeClases.csproj" />
+	  <ProjectReference Include="..\Ejercicio5DAL\Ejercicio5DAL.csproj" />
+	  <ProjectReference Include="..\Ejercicio5ENT\Ejercicio5ENT.csproj" />
 	</ItemGroup>
 
 </Project>

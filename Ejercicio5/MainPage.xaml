@@ -6,20 +6,22 @@
     <Grid>
         <ScrollView>
             <VerticalStackLayout Padding="20" Spacing="20">
-                <HorizontalStackLayout HorizontalOptions="Start">
+                <HorizontalStackLayout HorizontalOptions="Start" Padding="30" Spacing="10" Margin="0">
                     <Button
                     ImageSource="trash_can.png"
                     BackgroundColor="LightGreen"
-                    HeightRequest="10"
-                    WidthRequest="10"
-                    Margin="5"
+                    MinimumHeightRequest="10"
+                    MaximumHeightRequest="50"
+                    MinimumWidthRequest="10"
+                    MaximumWidthRequest="60"
                     />
                     <Button
                     ImageSource="pencil.png"
                     BackgroundColor="LightGreen"
-                    HeightRequest="10"
-                    WidthRequest="10"
-                    Margin="5"
+                    MinimumHeightRequest="10"
+                    MaximumHeightRequest="50"
+                    MinimumWidthRequest="10"
+                    MaximumWidthRequest="60"
                     />
                 </HorizontalStackLayout>
                 <ListView HorizontalOptions="Center" x:Name="PersonasListView" ItemsSource="{Binding Personas}">
@@ -46,8 +48,10 @@
                 TextColor="Black"
                 HorizontalOptions="End"
                 VerticalOptions="End"
-                HeightRequest="20"
-                WidthRequest="20"
+                MinimumHeightRequest="10"
+                MaximumHeightRequest="60"
+                MinimumWidthRequest="10"
+                MaximumWidthRequest="60"
                 Margin="20"
          />
     </Grid>
