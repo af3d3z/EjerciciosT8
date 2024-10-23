@@ -8,6 +8,7 @@ namespace Ejercicio5
         public MainPage()
         {
             InitializeComponent();
+            PersonasListView.ItemsSource = ListadoPersonasDAL.GetListadoPersonas();
         }
 
         

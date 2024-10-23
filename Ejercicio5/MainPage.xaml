@@ -3,17 +3,50 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Ejercicio5.MainPage">
 
-    <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="20">
-            <ListView x:Name="PersonasListView" ItemsSource="{Binding Personas}">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextCell Text="{Binding Personas}"/>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+    <Grid>
+        <ScrollView>
+            <VerticalStackLayout Padding="20" Spacing="20">
+                <ListView HorizontalOptions="Center" x:Name="PersonasListView" ItemsSource="{Binding Personas}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Margin="10">
+                                    <Label FontSize="20" Text="{Binding NombreCompleto}"></Label>
+                                    <Label FontSize="20" Text="{Binding FechaNac, StringFormat='{}{0:dd/MM/yyyy}'}"></Label>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
 
-        </VerticalStackLayout>
-    </ScrollView>
+            </VerticalStackLayout>
+        </ScrollView>
+        <Button Text="+"
+                BackgroundColor="Red"
+                TextColor="Black"
+                HorizontalOptions="End"
+                VerticalOptions="End"
+                HeightRequest="20"
+                WidthRequest="20"
+                Margin="20, 140"
+         />
+        <Button
+                ImageSource="trash_can.png"
+                BackgroundColor="Red"
+                HorizontalOptions="End"
+                VerticalOptions="End"
+                HeightRequest="20"
+                WidthRequest="20"
+                Margin="20, 80" />
+        <Button
+                ImageSource="pencil.png"
+                BackgroundColor="Red"
+                HorizontalOptions="End"
+                VerticalOptions="End"
+                HeightRequest="20"
+                WidthRequest="20"
+                Margin="20" />
+    </Grid>
+
 
 </ContentPage>
